@@ -25,9 +25,7 @@ const Pokemon = ({ pokemonId, onClick }) => {
   return (
     <div className="pokemon" onClick={handleClick}>
       {fetchData && (
-        <img src={fetchData.sprites.front_default} alt={pokemonId} style={{
-          width: '200px',
-        }} />
+        <img src={fetchData.sprites.front_default} alt={pokemonId} />
       )}
       <h4>{capitalize(pokemonId)}</h4>
     </div>
