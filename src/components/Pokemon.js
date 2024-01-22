@@ -1,4 +1,4 @@
-import React, { useEffect, useState, key } from "react";
+import React, { useEffect, useState } from "react";
 import '../App.css';
 
 const Pokemon = ({ pokemonId, onClick }) => {
@@ -23,7 +23,7 @@ const Pokemon = ({ pokemonId, onClick }) => {
   }
 
   return (
-    <div className="pokemon" onClick={handleClick} key={key}>
+    <div className="pokemon" onClick={handleClick}>
       {fetchData && (
         <img src={fetchData.sprites.front_default} alt={pokemonId} style={{
           width: '200px',
